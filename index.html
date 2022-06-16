@@ -12,34 +12,35 @@
   section{
     margin-top: 6rem;
   }
-  nav{
-    margin-top: 2rem;
-  }
+
 
 </style>
 
 </head>
 <body>
-  <nav class="container-lg ">
+  <nav class="container-lg navbar-expand-md navbar-light">
     <div class="container-xxl">
       <a href="#intro" class="navbar-brand">
         <span class="fw-bold info">Some Book</span>
       </a>
-      <ul class="nav nav-pills justify-content-end">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#intro">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-secondary" href="#intro">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-secondary" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-secondary" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
-    </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      </div>
+      <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a href="#topics" class="nav-link">About the book</a></li>
+            
+          <li class="nav-item"><a href="#reviews" class="nav-link">Reviews</a></li>
+            
+          <li class="nav-item"><a href="#contact" class="nav-link">Get in Touch</a></li>
+            
+          <li class="nav-item d-md-none"><a href="#pricing" class="nav-link">Pricing</a></li>
+            
+          <li class="nav-item ms-2 d-none d-md-inline"><a href="#pricing" class="btn btn-secondary">Buy Now</a></li>
+            
+        </ul>
+      </div>
   </nav>
 
 
@@ -52,7 +53,7 @@
         <div class="display-3 fw-bold">Black-Belt</div>
         <div class="display-5 text-secondary">Your Coding Skills</div>
         <p class="lead muted my-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea, ducimus!</p>
-        <a href="#prices" class="btn btn-secondary btn-lg rounded-pill">Buy Now</a>
+        <a href="#pricing" class="btn btn-secondary btn-lg rounded-pill">Buy Now</a>
       </h1>
     </div>
     <div class="col-lg-5 col-9 d-md-block d-none">
